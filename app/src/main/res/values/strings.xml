@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">List-it</string>
+    <string name="faq">FAQ</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="home">Home</string>
+    <string name="members">Miembros</string>
+    <string name="settings">Ajustes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
