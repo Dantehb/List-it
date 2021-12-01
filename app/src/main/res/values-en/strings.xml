@@ -28,4 +28,5 @@
     <string name="mis_listas">My lists</string>
     <string name="ver_todo">See all</string>
     <string name="nueva_lista">New list</string>
+    <string name="settingsMainText">Settings</string>
 </resources>

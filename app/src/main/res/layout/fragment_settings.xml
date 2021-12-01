@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
-        android:text="Ajustes"
+        android:text="@string/settingsMainText"
         android:textSize="24sp"
         android:textStyle="bold"/>
     <ListView

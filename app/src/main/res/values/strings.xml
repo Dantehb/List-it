@@ -27,4 +27,5 @@
     <string name="mis_listas">Mis listas</string>
     <string name="ver_todo">Ver todo</string>
     <string name="nueva_lista">Nueva lista</string>
+    <string name="settingsMainText">Ajustes</string>
 </resources>
