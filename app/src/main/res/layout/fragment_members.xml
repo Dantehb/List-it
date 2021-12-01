@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,8 +8,142 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textMiembros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Miembros"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutMembers1"
+        android:layout_below="@id/textMiembros"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/member1Icon"
+            android:src="@drawable/ic_phone"
+            android:layout_marginStart="100dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/member1Text"
+            android:text="Yael"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/member1Icon"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/member2Icon"
+            android:src="@drawable/ic_phone"
+            android:layout_toEndOf="@id/member1Text"
+
+            android:layout_marginStart="85dp"
+
+            />
+
+        <TextView
+            android:id="@+id/member2Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/member2Icon"
+            android:text="Adrian"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutMembers2"
+        android:layout_below="@id/layoutMembers1"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/member3Icon"
+            android:src="@drawable/ic_phone"
+            android:layout_marginStart="100dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/member3Text"
+            android:text="Angel"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/member3Icon"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/member4Icon"
+            android:src="@drawable/ic_phone"
+            android:layout_toEndOf="@id/member3Text"
+            android:layout_marginStart="80dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/member4Text"
+            android:text="Habacuc"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/member4Icon"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutButtons"
+        android:layout_below="@id/layoutMembers2"
+        android:layout_marginTop="60dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_add" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:src="@android:drawable/presence_offline" />
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

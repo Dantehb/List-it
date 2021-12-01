@@ -12,4 +12,5 @@
     <string name="answer1">- Revise la compatibilidad con la aplicacion.</string>
     <string name="question2">¿Por que aparece una pantalla en negro?</string>
     <string name="answer2">- Intente reiniciando el telefono.</string>
+    <string name="hello_blank_fragment">- Intente reiniciando el telefono.</string>
 </resources>
