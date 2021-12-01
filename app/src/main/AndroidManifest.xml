@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Listit">
         <activity
+            android:name=".AccountActivity"
+            android:exported="true" />
+        <activity
             android:name=".VerListas"
             android:exported="true" />
         <activity
@@ -19,7 +22,7 @@
             android:name=".CrearLista"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".AuthActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
