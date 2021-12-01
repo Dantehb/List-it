@@ -28,14 +28,16 @@
             android:layout_height="wrap_content"
             android:id="@+id/phoneIcon"
             android:src="@drawable/ic_phone"
-            android:layout_marginStart="100dp"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/phoneText"
-            android:text="4491234567"
-            android:layout_centerInParent="true"/>
+            android:text="@string/phoneNumbre"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/phoneIcon"
+            android:layout_marginStart="25dp"/>
 
     </RelativeLayout>
 
@@ -52,13 +54,16 @@
             android:id="@+id/messageIcon"
             android:src="@drawable/ic_message"
             android:layout_marginStart="70dp"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentStart="true"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/messageText"
             android:text="@string/messageText"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/messageIcon"
+            android:layout_marginStart="25dp"
+            />
 
     </RelativeLayout>
 
@@ -81,14 +86,14 @@
         android:textStyle="bold"
         android:layout_below="@id/faqScreen"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginStart="20dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/answer1"
         android:text="@string/answer1"
         android:layout_below="@id/question1"
-        android:layout_marginLeft="40dp"/>
+        android:layout_marginStart="40dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -98,13 +103,13 @@
         android:textStyle="bold"
         android:layout_below="@id/answer1"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginStart="20dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/answer2"
         android:text="@string/answer2"
         android:layout_below="@id/question2"
-        android:layout_marginLeft="40dp"/>
+        android:layout_marginStart="40dp"/>
 
 </RelativeLayout>

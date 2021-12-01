@@ -9,8 +9,15 @@
     <string name="messageText">Contestamos todos los dias</string>
     <string name="faqText">F.A.Q</string>
     <string name="question1">¿Por que mi aplicacion no inicia?</string>
-    <string name="answer1">- Revise la compatibilidad con la aplicacion.</string>
+    <string name="answer1"> - Revise la compatibilidad con la aplicacion.</string>
     <string name="question2">¿Por que aparece una pantalla en negro?</string>
-    <string name="answer2">- Intente reiniciando el telefono.</string>
-    <string name="hello_blank_fragment">- Intente reiniciando el telefono.</string>
+    <string name="answer2"> - Intente reiniciando el telefono.</string>
+    <string name="phoneNumbre">4491234567</string>
+    
+    <string-array name="settings">
+        <item>Apoyanos</item>
+        <item>Cambiar idioma</item>
+        <item>Calificanos en la PlayStore</item>
+        <item>Creditos</item>
+    </string-array>
 </resources>
