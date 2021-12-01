@@ -17,4 +17,14 @@
     <string name="setting2">Cambiar idioma</string>
     <string name="setting3">Calificanos en la PlayStore</string>
     <string name="setting4">Creditos</string>
+    <string name="nombre_de_la_lista">Nombre de la lista</string>
+    <string name="nombre_lista">Nombre lista</string>
+    <string name="objetos_o_acciones_de_la_lista">Objetos o acciones de la lista</string>
+    <string name="objetos">Objetos</string>
+    <string name="fecha_para_completar">Fecha para completar</string>
+    <string name="tiene_hora_para_completar">¿Tiene hora para completar?</string>
+    <string name="requiere_un_presupuesto">¿Requiere un presupuesto?</string>
+    <string name="mis_listas">Mis listas</string>
+    <string name="ver_todo">Ver todo</string>
+    <string name="nueva_lista">Nueva lista</string>
 </resources>

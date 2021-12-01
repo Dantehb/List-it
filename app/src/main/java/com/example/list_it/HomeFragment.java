@@ -1,5 +1,6 @@
 package com.example.list_it;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -60,5 +61,19 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+
+    public void launchVerLista(View v)
+    {
+        Intent intent = new Intent(getActivity(), VerLista.class);
+        startActivity(intent);
+    }
+
+
+
+    public void launchCrearLista(View v)
+    {
+        Intent intent = new Intent(getActivity(), CrearLista.class);
+        startActivity(intent);
     }
 }

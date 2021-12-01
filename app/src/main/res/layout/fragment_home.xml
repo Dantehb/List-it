@@ -3,12 +3,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/mis_listas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/mis_listas" />
+
+    <RelativeLayout
+        android:id="@+id/layoutLists"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Home" />
+        android:layout_below="@id/mis_listas"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/menu" />
+
+        <ImageButton
+            android:id="@+id/lista_central"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:onClick="launchVerLista"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_message" />
+
+        <ImageButton
+            android:id="@+id/lista_izquierda"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="10dp"
+            android:onClick="launchVerLista"
+            android:src="@drawable/ic_message" />
+
+        <ImageButton
+            android:id="@+id/lista_derecha"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:onClick="launchVerLista"
+            android:src="@drawable/ic_message" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="launchVerLista"
+            android:src="@android:drawable/ic_menu_more"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/ver_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/ver_todo"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAdd"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="140dp"
+            android:onClick="launchCrearLista"
+            android:src="@android:drawable/ic_menu_add" />
+
+        <TextView
+            android:id="@+id/textViewAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/nueva_lista" />
+
+
+    </RelativeLayout>
 
 </RelativeLayout>
