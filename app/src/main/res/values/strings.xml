@@ -13,11 +13,8 @@
     <string name="question2">¿Por que aparece una pantalla en negro?</string>
     <string name="answer2"> - Intente reiniciando el telefono.</string>
     <string name="phoneNumbre">4491234567</string>
-    
-    <string-array name="settings">
-        <item>Apoyanos</item>
-        <item>Cambiar idioma</item>
-        <item>Calificanos en la PlayStore</item>
-        <item>Creditos</item>
-    </string-array>
+    <string name="setting1">Apoyanos</string>
+    <string name="setting2">Cambiar idioma</string>
+    <string name="setting3">Calificanos en la PlayStore</string>
+    <string name="setting4">Creditos</string>
 </resources>

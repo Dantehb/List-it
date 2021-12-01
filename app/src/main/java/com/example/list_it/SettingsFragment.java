@@ -10,8 +10,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,39 +21,36 @@ import java.util.List;
 
 public class SettingsFragment extends Fragment {
 
-    private ArrayList<Settings> settingsList;
-
+    //private ArrayList<Settings> settingsList;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
     }
 
-    public void populateSettings(String[] setting){
+    //*public void populateSettings(String[] setting){
         //*settingsList.add(new Settings(setting[0], R.drawable.ic_donation));
         //*settingsList.add(new Settings(setting[1], R.drawable.ic_language));
         //*settingsList.add(new Settings(setting[2], R.drawable.ic_playstore));
         //*settingsList.add(new Settings(setting[3], R.drawable.ic_credits));
-    }
+    //*}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_settings, container, false);
-
         //*settingsList = new ArrayList<>();
         //*Resources res = getResources();
         //*String[] allSettings = res.getStringArray(R.array.settings);
 
         //*populateSettings(allSettings);
 
-
         //*SettingsAdapter adapter = new SettingsAdapter(getActivity().getApplicationContext(), R.layout.rowdesign, settingsList);
         String[] menuItems={
-                "Apoyanos", "Cambiar idioma", "Calificanos en la PlayStore", "Creditos"
+                getString(R.string.setting1),
+                getString(R.string.setting2),
+                getString(R.string.setting3),
+                getString(R.string.setting4)
         };
         //*ListView listview = (ListView) getActivity().findViewById(R.id.settingsListView);
         ListView listview = (ListView) view.findViewById(R.id.settingsListView);
@@ -59,6 +58,27 @@ public class SettingsFragment extends Fragment {
                 getActivity(), android.R.layout.simple_list_item_1, menuItems
         );
         listview.setAdapter(adapter);
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String s=menuItems[i];
+                //Toast.makeText(getActivity(), "Clicked: " + s, Toast.LENGTH_SHORT).show();
+                switch(i){
+                    case 0:
+                        Toast.makeText(getActivity(), "Clicked: 0" + s, Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+                        Toast.makeText(getActivity(), "Clicked: 1" + s, Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        Toast.makeText(getActivity(), "Clicked: 2" + s, Toast.LENGTH_SHORT).show();
+                        break;
+                    case 3:
+                        Toast.makeText(getActivity(), "Clicked: 3" + s, Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+        });
 
         // Inflate the layout for this fragment
         return view;

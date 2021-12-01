@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">List-it</string>
+    <string name="faq">FAQ</string>
+    <string name="notifications">Notifications</string>
+    <string name="home">Home</string>
+    <string name="members">Members</string>
+    <string name="settings">Settings</string>
+    <string name="supportText">Technical Support</string>
+    <string name="messageText">We answer everyday</string>
+    <string name="faqText">F.A.Q</string>
+    <string name="question1">¿Why does my app not start?</string>
+    <string name="answer1"> - Check compatibility with the app.</string>
+    <string name="question2">¿Why does a Black Screen appear?</string>
+    <string name="answer2"> - Try restarting the device.</string>
+    <string name="phoneNumbre">4491234567</string>
+    <string name="setting1">Support us!</string>
+    <string name="setting2">Change language</string>
+    <string name="setting3">Rate us on the PlayStore</string>
+    <string name="setting4">Credits</string>
+</resources>
