@@ -28,4 +28,7 @@
     <string name="ver_todo">Ver todo</string>
     <string name="nueva_lista">Nueva lista</string>
     <string name="settingsMainText">Ajustes</string>
+    <string name="passwordHint">Contraseña</string>
+    <string name="signInButton">Registrarse</string>
+    <string name="logInButton">Iniciar Sesión</string>
 </resources>

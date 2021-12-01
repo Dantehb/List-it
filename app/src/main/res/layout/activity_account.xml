@@ -6,25 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".AccountActivity">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".AuthActivity">
-
-        <FrameLayout
-            android:id="@+id/contenedor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNav"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="?android:attr/windowBackground"
-            app:menu="@menu/menu" />
+        tools:context=".AuthActivity"
+        tools:layout_editor_absoluteX="-45dp"
+        tools:layout_editor_absoluteY="109dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -43,8 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="Email"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:text="Email" />
 
             <Space
                 android:layout_width="match_parent"
@@ -56,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:ems="10"
-                android:text="Proveedor"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:text="Proveedor" />
 
             <Space
                 android:layout_width="match_parent"

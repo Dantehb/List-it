@@ -29,4 +29,7 @@
     <string name="ver_todo">See all</string>
     <string name="nueva_lista">New list</string>
     <string name="settingsMainText">Settings</string>
+    <string name="passwordHint">Password</string>
+    <string name="signInButton">Sign In</string>
+    <string name="logInButton">Log In</string>
 </resources>

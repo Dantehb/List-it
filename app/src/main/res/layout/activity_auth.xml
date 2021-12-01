@@ -6,19 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".AuthActivity">
 
-    <FrameLayout
-        android:id="@+id/contenedor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/menu" />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:ems="10"
-            android:hint="Contraseña"
+            android:hint="@string/passwordHint"
             android:inputType="textPassword"
             android:minHeight="48dp" />
 
@@ -69,7 +56,7 @@
                 android:layout_width="156dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Registrarse" />
+                android:text="@string/signInButton" />
 
             <Space
                 android:layout_width="8dp"
@@ -80,7 +67,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Iniciar Sesión" />
+                android:text="@string/logInButton"
+                android:onClick="launchBottomActivity"/>
         </LinearLayout>
     </LinearLayout>
 
