@@ -1,5 +1,8 @@
 package com.example.list_it;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +63,30 @@ public class FaqFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_faq, container, false);
+        View v=inflater.inflate(R.layout.fragment_faq, container, false);
+
+        Button buttonCall=(Button) v.findViewById(R.id.buttonCall);
+        buttonCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String dial="tel:4491234567";
+                startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(dial)));
+            }
+        });
+        Button buttonMsj=(Button) v.findViewById(R.id.buttonMessage);
+        buttonMsj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String message="ayyyyy mi madre";
+                String phoneNumber="4491234567";
+                Intent smsIntent=new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:" + phoneNumber));
+                smsIntent.putExtra("sms_body", "");
+                startActivity(smsIntent);
+            }
+        });
+
+        return v;
     }
+
+
 }

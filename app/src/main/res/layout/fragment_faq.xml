@@ -38,14 +38,21 @@
             android:layout_centerInParent="true"
             android:layout_toEndOf="@id/phoneIcon"
             android:layout_marginStart="25dp"/>
-
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutPhone"
+        android:layout_centerInParent="true"
+        android:text="Llamanos"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/layoutMessage"
-        android:layout_below="@id/layoutPhone"
+        android:layout_below="@id/buttonCall"
         android:layout_marginTop="5dp">
 
         <ImageView
@@ -67,13 +74,21 @@
 
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/buttonMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutMessage"
+        android:layout_centerInParent="true"
+        android:text="Mensaje"/>
+
     <TextView
         android:id="@+id/faqScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/layoutMessage"
+        android:layout_below="@id/buttonMessage"
         android:text="@string/faqText"
         android:textSize="24sp"
         android:textStyle="bold" />
