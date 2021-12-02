@@ -81,15 +81,15 @@
             android:src="@drawable/ic_phone"
             android:layout_marginStart="100dp"
             android:layout_alignParentLeft="true"/>
+
         <TextView
+            android:id="@+id/member3Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/member3Text"
-            android:text="Angel"
             android:layout_centerInParent="true"
             android:layout_toEndOf="@id/member3Icon"
 
-            />
+            android:text="Angel" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -99,15 +99,15 @@
             android:layout_toEndOf="@id/member3Text"
             android:layout_marginStart="80dp"
             />
+
         <TextView
+            android:id="@+id/member4Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/member4Text"
-            android:text="Habacuc"
             android:layout_centerInParent="true"
             android:layout_toEndOf="@id/member4Icon"
 
-            />
+            android:text="Habacuc" />
 
 
 
@@ -136,14 +136,21 @@
             android:id="@+id/floatingActionButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="100dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginRight="100dp"
             android:clickable="true"
             android:src="@android:drawable/presence_offline" />
         </RelativeLayout>
 
-
-
+    <Button
+        android:id="@+id/buttonCrearMiembro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="312dp"
+        android:text="Button" />
 
 
 </RelativeLayout>

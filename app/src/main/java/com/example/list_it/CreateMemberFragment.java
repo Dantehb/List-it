@@ -3,21 +3,17 @@ package com.example.list_it;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MembersFragment#newInstance} factory method to
+ * Use the {@link CreateMemberFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MembersFragment extends Fragment {
+public class CreateMemberFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +24,7 @@ public class MembersFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public MembersFragment() {
+    public CreateMemberFragment() {
         // Required empty public constructor
     }
 
@@ -38,20 +34,17 @@ public class MembersFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment MembersFragment.
+     * @return A new instance of fragment CreateMemberFragment.
      */
     // TODO: Rename and change types and number of parameters
-    private FloatingActionButton button_abrirCrearMiembro;
-    private Button buttonPrueba;
-    public static MembersFragment newInstance(String param1, String param2) {
-        MembersFragment fragment = new MembersFragment();
+    public static CreateMemberFragment newInstance(String param1, String param2) {
+        CreateMemberFragment fragment = new CreateMemberFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,35 +53,12 @@ public class MembersFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
-
-
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_members, container, false);
-
-        button_abrirCrearMiembro = (FloatingActionButton) v.findViewById(R.id.floatingActionButton);
-
-        button_abrirCrearMiembro.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View v) {
-                CreateMemberFragment createMemberFragment = new CreateMemberFragment();
-                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.contenedor, createMemberFragment);
-                fragmentTransaction.commit();
-            }
-        });
         // Inflate the layout for this fragment
-        return v;
-
-
-
-
-
+        return inflater.inflate(R.layout.fragment_create_member, container, false);
     }
 }
