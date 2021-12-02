@@ -3,13 +3,16 @@ package com.example.list_it;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,9 +77,13 @@ public class SettingsFragment extends Fragment {
                         break;
                     case 1:
                         Toast.makeText(getActivity(), "Clicked: 1" + s, Toast.LENGTH_SHORT).show();
+                        //intent implicito settings
+                        openSettings();
                         break;
                     case 2:
                         Toast.makeText(getActivity(), "Clicked: 2" + s, Toast.LENGTH_SHORT).show();
+                        //intent play store
+                        openPlayStore();
                         break;
                     case 3:
                         Toast.makeText(getActivity(), "Clicked: 3" + s, Toast.LENGTH_SHORT).show();
@@ -87,6 +94,19 @@ public class SettingsFragment extends Fragment {
 
         // Inflate the layout for this fragment
         return view;
+    }
+
+    public void openSettings(){
+        Intent intent=new Intent(Settings.ACTION_SETTINGS);
+        if(intent.resolveActivity(getActivity().getPackageManager())!=null){
+            startActivity(intent);
+        }
+    }
+
+    public void openPlayStore(){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("market://details?id=com.YoStarEN.Arknights"));
+        startActivity(intent);
     }
 }
 /**
