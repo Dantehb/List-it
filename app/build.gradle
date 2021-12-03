@@ -56,4 +56,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:17.1.4'
 
 
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-firestore:17.1.4'
+    implementation 'com.firebaseui:firebase-ui-firestore:6.4.0'
+
+
 }

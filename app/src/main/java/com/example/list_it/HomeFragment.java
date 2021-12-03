@@ -90,11 +90,13 @@ public class HomeFragment extends Fragment {
         imageButtonListaIzq.setOnClickListener(new View.OnClickListener() {
                                               @Override
                                               public void onClick(View v) {
-                                                  ViewListaIzquierdaFragment viewListaIzquierdaFragment = new ViewListaIzquierdaFragment();
+                                                  MostrarDatosFragment mostrarDatosFragment = new MostrarDatosFragment();
                                                   FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                                                  fragmentTransaction.replace(R.id.contenedor, viewListaIzquierdaFragment);
+                                                  fragmentTransaction.replace(R.id.contenedor, mostrarDatosFragment);
                                                   fragmentTransaction.commit();
                                               }
+
+
                                           }
 
         );

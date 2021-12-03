@@ -38,4 +38,7 @@
     <string name="registerButtonText">Sign In</string>
     <string name="emailEditHint">Email</string>
     <string name="logInButtonText">Log In</string>
+    <string name="titulo">Title</string>
+    <string name="contenido">Content</string>
+    <string name="fecha">Date</string>
 </resources>

@@ -37,6 +37,9 @@
     <string name="registerButtonText">Registrarse</string>
     <string name="emailEditHint">Correo Electrónico</string>
     <string name="logInButtonText">Iniciar Sesión</string>
+    <string name="titulo">Titulo</string>
+    <string name="contenido">Contenido</string>
+    <string name="fecha">Fecha</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
