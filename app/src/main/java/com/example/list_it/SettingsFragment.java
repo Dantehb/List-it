@@ -80,15 +80,12 @@ public class SettingsFragment extends Fragment {
                         Toast.makeText(getActivity(), "Clicked: 0" + s, Toast.LENGTH_SHORT).show();
                         break;
                     case 1:
-                        Toast.makeText(getActivity(), "Clicked: 1" + s, Toast.LENGTH_SHORT).show();
                         openSettings();
                         break;
                     case 2:
-                        Toast.makeText(getActivity(), "Clicked: 2" + s, Toast.LENGTH_SHORT).show();
                         openPlayStore();
                         break;
                     case 3:
-                        Toast.makeText(getActivity(), "Clicked: 3" + s, Toast.LENGTH_SHORT).show();
                         //log out
                         logOut();
                         break;

@@ -142,15 +142,4 @@
             android:src="@android:drawable/presence_offline" />
         </RelativeLayout>
 
-    <Button
-        android:id="@+id/buttonCrearMiembro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="312dp"
-        android:text="Button" />
-
-
 </RelativeLayout>
