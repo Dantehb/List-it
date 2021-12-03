@@ -21,7 +21,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
  */
 public class HomeFragment extends Fragment {
     private ImageButton imageButtonAdd;
-  //  private Button buttonPrueba;
+    private ImageButton imageButtonListaIzq;
+    private ImageButton imageButtonListaMedio;
+    private ImageButton imageButtonListaDerecha;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -69,6 +71,9 @@ public class HomeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
         imageButtonAdd = (ImageButton) v.findViewById(R.id.imageButtonAdd);
+        imageButtonListaIzq = (ImageButton) v.findViewById(R.id.lista_izquierda);
+        imageButtonListaMedio = (ImageButton) v.findViewById(R.id.lista_central);
+        imageButtonListaDerecha = (ImageButton) v.findViewById(R.id.lista_derecha);
 
         imageButtonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,14 +84,44 @@ public class HomeFragment extends Fragment {
                 fragmentTransaction.replace(R.id.contenedor, createListFragment);
                 fragmentTransaction.commit();
             }
-        });
+        }
+        );
+
+        imageButtonListaIzq.setOnClickListener(new View.OnClickListener() {
+                                              @Override
+                                              public void onClick(View v) {
+                                                  ViewListaIzquierdaFragment viewListaIzquierdaFragment = new ViewListaIzquierdaFragment();
+                                                  FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                                                  fragmentTransaction.replace(R.id.contenedor, viewListaIzquierdaFragment);
+                                                  fragmentTransaction.commit();
+                                              }
+                                          }
+
+        );
+
+        imageButtonListaMedio.setOnClickListener(new View.OnClickListener() {
+                                                   @Override
+                                                   public void onClick(View v) {
+                                                       ViewListaMedioFragment viewListaMedioFragment = new ViewListaMedioFragment();
+                                                       FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                                                       fragmentTransaction.replace(R.id.contenedor, viewListaMedioFragment);
+                                                       fragmentTransaction.commit();
+                                                   }
+                                               }
+        );
+
+        imageButtonListaDerecha.setOnClickListener(new View.OnClickListener() {
+                                                     @Override
+                                                     public void onClick(View v) {
+                                                         ViewListaDerechaFragment viewListaDerechaFragment = new ViewListaDerechaFragment();
+                                                         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                                                         fragmentTransaction.replace(R.id.contenedor, viewListaDerechaFragment);
+                                                         fragmentTransaction.commit();
+                                                     }
+                                                 }
+        );
         // Inflate the layout for this fragment
         return v;
-
-
-
-
-
     }
 
     public void launchVerLista(View v)

@@ -31,4 +31,6 @@
     <string name="passwordHint">Contraseña</string>
     <string name="signInButton">Registrarse</string>
     <string name="logInButton">Iniciar Sesión</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    
 </resources>
