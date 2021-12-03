@@ -16,7 +16,7 @@
     <string name="setting1">Apoyanos</string>
     <string name="setting2">Cambiar idioma</string>
     <string name="setting3">Calificanos en la PlayStore</string>
-    <string name="setting4">Creditos</string>
+    <string name="setting4">Cerrar Sesion</string>
     <string name="nombre_de_la_lista">Nombre de la lista</string>
     <string name="nombre_lista">Nombre lista</string>
     <string name="objetos_o_acciones_de_la_lista">Objetos o acciones de la lista</string>
@@ -31,6 +31,12 @@
     <string name="passwordHint">Contraseña</string>
     <string name="signInButton">Registrarse</string>
     <string name="logInButton">Iniciar Sesión</string>
+    <string name="nameEditHint">Nombre</string>
+    <string name="nameEmailHint">Email</string>
+    <string name="passwordEditHint">Contraseña</string>
+    <string name="registerButtonText">Registrarse</string>
+    <string name="emailEditHint">Correo Electrónico</string>
+    <string name="logInButtonText">Iniciar Sesión</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>

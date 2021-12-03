@@ -17,7 +17,7 @@
     <string name="setting1">Support us!</string>
     <string name="setting2">Change language</string>
     <string name="setting3">Rate us on the PlayStore</string>
-    <string name="setting4">Credits</string>
+    <string name="setting4">Log Out</string>
     <string name="nombre_de_la_lista">List´s name</string>
     <string name="nombre_lista">Name</string>
     <string name="objetos_o_acciones_de_la_lista">List´s objects or actions</string>
@@ -32,4 +32,10 @@
     <string name="passwordHint">Password</string>
     <string name="signInButton">Sign In</string>
     <string name="logInButton">Log In</string>
+    <string name="nameEditHint">Name</string>
+    <string name="nameEmailHint">Email</string>
+    <string name="passwordEditHint">Password</string>
+    <string name="registerButtonText">Sign In</string>
+    <string name="emailEditHint">Email</string>
+    <string name="logInButtonText">Log In</string>
 </resources>

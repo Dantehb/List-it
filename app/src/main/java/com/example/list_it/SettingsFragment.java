@@ -23,6 +23,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +32,7 @@ import java.util.List;
 public class SettingsFragment extends Fragment {
 
     //private ArrayList<Settings> settingsList;
+    private FirebaseAuth mAuth;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,7 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_settings, container, false);
+        mAuth=FirebaseAuth.getInstance();
         //*settingsList = new ArrayList<>();
         //*Resources res = getResources();
         //*String[] allSettings = res.getStringArray(R.array.settings);
@@ -77,16 +81,16 @@ public class SettingsFragment extends Fragment {
                         break;
                     case 1:
                         Toast.makeText(getActivity(), "Clicked: 1" + s, Toast.LENGTH_SHORT).show();
-                        //intent implicito settings
                         openSettings();
                         break;
                     case 2:
                         Toast.makeText(getActivity(), "Clicked: 2" + s, Toast.LENGTH_SHORT).show();
-                        //intent play store
                         openPlayStore();
                         break;
                     case 3:
                         Toast.makeText(getActivity(), "Clicked: 3" + s, Toast.LENGTH_SHORT).show();
+                        //log out
+                        logOut();
                         break;
                 }
             }
@@ -107,6 +111,12 @@ public class SettingsFragment extends Fragment {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("market://details?id=com.YoStarEN.Arknights"));
         startActivity(intent);
+    }
+
+    public void logOut(){
+        mAuth.signOut();
+        startActivity(new Intent(getActivity(), AuthActivity.class));
+        getActivity().finish();
     }
 }
 /**
