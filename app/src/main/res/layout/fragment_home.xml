@@ -75,7 +75,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="70dp"
             android:layout_marginEnd="10dp"
-            android:onClick="launchVerLista"
+
             android:src="@android:drawable/ic_menu_more"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 

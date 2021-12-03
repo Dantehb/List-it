@@ -74,7 +74,7 @@
         android:checked="false"
         android:text="@string/fecha_para_completar"
         tools:checked="false"
-        android:onClick="mostrarFecha"/>
+        />
 
     <CalendarView
         android:id="@+id/calendarViewCalendario"
@@ -93,7 +93,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="340dp"
-        android:onClick="mostrarHora"/>
+        />
 
     <Switch
         android:id="@+id/switchPresupuesto"
@@ -104,7 +104,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="370dp"
-        android:onClick="mostrarPresupuesto"/>
+       />
 
     <EditText
         android:id="@+id/editTextNumberDecimal"
